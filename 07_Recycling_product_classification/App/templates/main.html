@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>재활용 모델</title>
+        <style>
+            .p{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        </style>
+    </head>
+    <body align="center">
+    <h2>[ 어린이를 위한 분리배출 도움 서비스 ]</h2>
+    <div style='display:inline-block; text-align:center; background-color:#4fca99;border-radius:10px;width:60%; margin: auto;padding:50px; min-width: 500px;'>
+        <img src="../static/img/bgi.jpg" width="500" height="500" style="text-align:center;" alt="분리수거일러스트"/>
+        <!-- <input type="image" id="image" src="../images/bgi.jpg" width="500" height="500" style="text-align:center;"/> -->
+        <br><br>
+        <form method="POST" enctype="multipart/form-data" action="{{url_for('upload_done')}}">
+            <input type="file" name="file"/>
+            <input type="submit" value="분리배출시작"/>
+        </form>
+        <p><font color='white'><br><br>made by 극단적분리주의자들<br><br>팀원 : 이수진, 이재필, 나서영, 오승준, 김대환</font></p>
+    </div>
+    </body></html>

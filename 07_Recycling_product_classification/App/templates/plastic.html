@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>페트병 분리배출 가이드</title>
+    <style>
+
+    @font-face {
+    font-family: 'NanumSquareNeoAlt';
+    src: url('../static/font/NANUMSQUARENEO-ALT.TTF'); /* IE9 Compat Modes */
+    }
+   
+    body {
+        font-family: 'NanumSquareNeoAlt', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: 
+            linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+            url('../static/img/plastic/배경이미지2.jpg');
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-position: center;
+        position:relative; 
+    }
+
+    .container {
+        width: 80%;
+        margin:auto;
+        overflow: hidden;
+        align-items: center; 
+        font-size: 25px;
+    }
+        
+    header{
+        background:#ffffff; 
+        color:rgb(0, 0, 0);
+	    text-align:center;
+        text-shadow: 
+        40px 0px 40px #4b64d2,   /* 오른쪽 */
+        -40px 0px 40px #4b64d2,   /* 왼쪽 */
+        0px -40px 40px #4b64d2,   /* 위쪽 */
+        0px 40px 40px #4b64d2;    /* 아래쪽 */
+	    padding-top:30px; 
+	    min-height:70px; 
+	    border-bottom:#4b64d2 3px solid; 
+        
+    }
+
+	#disposal-guide {
+	    padding:20px; 
+	    margin-top :20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+	}
+
+	#disposal-guide h2{
+	     color:black;
+         text-align: center;
+         font-size: 20px;
+	}
+
+    #disposal-content {
+	    padding:20px; 
+	    margin-top :5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	}
+
+    .content-item {
+    text-align: center;  /* 텍스트를 중앙 정렬 */
+    margin-bottom: 100px;  /* 아래쪽에 여백 추가 */
+    font-size: 20px;
+    }
+
+    .content-item img {
+    display: block;  /* 이미지를 블록 요소로 설정 */
+    margin: 10px auto;  /* 이미지 위아래에 여백 추가 및 중앙 정렬 */
+    width: 300px;
+    height: auto;
+    box-shadow: 5px 5px 5px rgb(53, 52, 52);
+    border-radius: 0.5cm;
+    }
+
+    ol {
+    list-style: none; /* 기본 숫자형 목록 표시 제거 */
+    counter-reset: step-counter; /* 카운터 초기화 */
+    }
+
+    li::before {
+        counter-increment: step-counter; /* 카운터 증가 */
+        content: "Step " counter(step-counter) ": "; /* Step과 카운터 값을 함께 출력 */
+        font-size: 1.8em; /* 폰트 크기 조절 */
+    }
+
+
+    </style>
+</head>
+
+<body align="center">
+<div class='main'> 
+    <header>
+        <div class="container">
+        <h1>페트병 분리배출 가이드</h1>  
+        <!-- 메인페이지에서 가져온 이미지 (예: 우유곽 사진 올리면 그대로) -->
+        <img src="../static/img/1.jpeg" alt="image for milkpack" style="width: 250px; height: 250px; "/>
+        <h3>이 쓰레기는 유색과 투명으로 나누어 분리해요</h3>
+        </div>    
+    </header>
+        <!-- 우유곽 예시 이미지 -->
+        <div class="container" id="disposal-guide">
+            <div style="display: flex;">
+                <img src="../static/img/plastic/pet.png" alt="small icon" style="width: 100px; height: auto; margin-right: 0.1 px; transform: rotate(10deg);">
+                <div>
+                    <h2>페트병은 어떻게 분리하나요?</h2>
+                    <p>"페트병은 투명한 병과 유색을 분리하여 따로 버려주세요!"</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" id="disposal-content">
+            <ol type="1">
+                <li>
+                    <div class="content-item">
+                        <strong>비우기:</strong> 페트병 안의 내용물을 깨끗이 비워 주세요.
+                        <img src="../static/img/plastic/화면 캡처 2023-09-10 170301.png" alt="image for milkpack"style="width: 250px; height: 250px;"/>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-item">
+                        <strong>압착하기:</strong> 페트병을 밟아서 압착해주세요.
+                        <img src="../static/img/plastic/화면 캡처 2023-09-10 170113.png" alt="image for milkpack"style="width: 250px; height: 250px;"/>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-item">
+                        <strong>분리수거:</strong> 플라스틱 수거함에 버려주세요.
+                        <img src="../static/img/plastic/TI000093944_STD.jpg" alt="image for milkpack"style="width: 250px; height: 250px;"/>
+                    </div>
+            </ol>
+
+            <ol type="1">
+                <li>
+                    <div class="content-item">
+                        <strong>비닐라벨 제거:</strong> 내용물을 비우고, 투명 페트병의 비닐라벨을 제거해 주세요.
+                        <img src="../static/img/plastic/화면 캡처 2023-09-10 165001.png" alt="image for milkpack" style="width: 250px; height: 250px;"/>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-item">
+                        <strong>압착하기:</strong> 페트병을 밟아서 압착해주세요.
+                        <img src="../static/img/plastic/화면 캡처 2023-09-10 165943.png" alt="image for milkpack" style="width: 250px; height: 250px;"/>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-item">
+                        <strong>분리배출:</strong> 뚜껑을 닫고, 투명 페트병 전용 수거함에 버려주세요.
+                        <img src="../static/img/plastic/화면 캡처 2023-09-10 165131.png" alt="image for milkpack" style="width: 250px; height: 250px;"/>
+                    </div>
+            </ol>
+        </div>
+</div>
+</body>
+</html>
