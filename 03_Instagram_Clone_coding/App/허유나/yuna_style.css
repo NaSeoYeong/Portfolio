@@ -1,0 +1,313 @@
+/* 유나 님 CSS */
+
+body {
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+header {
+    text-align: center;
+}
+
+#insta {
+    padding-top: 7px;
+    text-align: left;
+}
+
+h3 {
+    position:relative;
+    left:10px;
+}
+
+#profile {
+    border-radius: 70%;
+    position:relative;
+    left:20px;
+    border:4px double;
+    float:left;
+}
+
+.follow {
+    border: 1px solid white;
+    position:relative;
+    top:10px; left:80px;
+    clear:both;
+}
+
+#table1 {
+    text-align: center;
+    position:relative;
+    top:70px; left:70px;
+    font-size: 20px;
+
+}
+
+table td figure {
+    margin:12px;
+}
+
+#table2 img {
+    border-radius: 70%; 
+    border:5px double;
+}
+
+#table2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure a#_da:link, figure a#_da:visited{
+    color:rgb(214, 192, 234);
+}
+
+figure a#_da:hover{
+    color:black;
+}
+
+figure a#_field:link, figure a#_field:visited{
+    color:rgb(213, 110, 110);
+}
+
+figure a#_field:hover{
+    color:black;
+}
+
+figure a#_study:link, figure a#_study:visited{
+    color:rgb(171, 171, 235);
+}
+
+figure a#_study:hover{
+    color:black;
+}
+
+figure a#_mini:link, figure a#_mini:visited{
+    color:rgb(236, 236, 158);
+}
+
+figure a#_mini:hover{
+    color:black;
+}
+
+/* 새로 추가한 부분입니다. */
+
+/* 
+div#group > table >a> img:visited{
+    color:pink;
+}
+
+
+div#group > table >a > img:hover{
+    color:black;
+} */
+
+
+/* 요셉 CSS  */
+
+body{
+    margin: 0px;
+}
+
+div#button1{
+    padding-top: 3px;
+    background-color: white;
+    width: 50%;
+    height: 40px;
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+    
+}
+
+div#button1>img{
+    height: 30px;
+    width: 30px;
+    
+    
+}
+
+div#button2{
+    padding-top: 3px;
+    background-color: white;
+    width: 50%;
+    height: 40px;
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+div#button2>img{
+    height: 30px;
+    width: 30px;
+}
+
+section{
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+hr{
+    margin: 5px;
+}
+
+/* 서영님 CSS */
+/* div#group {
+    border-bottom: 1px solid gray;
+} */
+
+div#group > table {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+div#group img {
+    width: 250px; 
+    height: 250px;
+    border-radius: 70%;
+}
+
+div#group section{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+div#group td{
+    vertical-align: top;
+}
+
+#nickname {
+    font-size: 50px;
+    font-weight: bold;
+    margin:0;
+}
+
+/* 개인 인스타 CSS 입니다. */
+/* 
+#_da h1 {
+    background-color: rgb(214, 192, 234);
+}
+
+#_field h1 {
+    background-color: rgb(213, 110, 110);
+}
+
+#_study h1 {
+    background-color: rgb(171, 171, 235);
+}
+
+#_mini h1 {
+    background-color: rgb(236, 236, 158);
+} */
+
+.da_parent {
+    display: inline-block;
+    width:100%;
+    background: rgb(214, 192, 234);
+}
+
+.da1 {
+    display:inline;
+
+    background:white;
+    padding-right:10px;
+    float:left;
+
+    font-size:25px;
+    font-weight: bold;
+}
+
+.da_content {
+    position:relative;
+    left: 10px; top:20px;
+}
+
+.fi_parent {
+    display: inline-block;
+    width:100%;
+    background: rgb(213, 110, 110);
+    margin-top:60px;
+}
+
+.fi {
+    display:inline;
+
+    background:white;
+    padding-right:10px;
+    float:left;
+
+    font-size:25px;
+    font-weight: bold;
+}
+
+.st_parent {
+    display: inline-block;
+    width:100%;
+    background: rgb(171, 171, 235);
+    margin-top:30px;
+}
+
+.st {
+    display:inline;
+
+    background:white;
+    padding-right:10px;
+    float:left;
+
+    font-size:25px;
+    font-weight: bold;
+}
+
+.mi_parent {
+    display: inline-block;
+    width:100%;
+    background: rgb(236, 236, 158);
+    margin-top:30px;
+}
+
+.mi {
+    display:inline;
+
+    background:white;
+    padding-right:10px;
+    float:left;
+
+    font-size:25px;
+    font-weight: bold;
+}
+
+
+#p1:link {
+    color:burlywood;
+}
+
+#p1:visited {
+    color:burlywood;
+}
+
+#p1:hover {
+    color:black;
+}
+
+
+#p2:link {
+    color:rgb(81, 144, 106);
+}
+
+#p2:visited {
+    color:rgb(81, 144, 106);
+}
+
+#p2:hover {
+    color:black;
+}
+
+.p1_content, .p2_content{
+    position: relative;
+    left:20px;
+}

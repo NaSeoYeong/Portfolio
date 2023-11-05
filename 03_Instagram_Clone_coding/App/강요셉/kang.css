@@ -1,0 +1,394 @@
+/* 유나 님 CSS */
+header {
+    text-align: center;
+}
+
+#insta {
+    position: relative;
+    padding-top: 7px;
+    text-align: left;
+    left: 20px;
+
+}
+
+h3 {
+    position:relative;
+    left:10px;
+}
+
+#profile {
+    border-radius: 70%;
+    position:relative;
+    left:20px;
+    border:4px double;
+    float:left;
+}
+
+.follow {
+    border: 1px solid white;
+    position:relative;
+    top:10px; left:80px;
+    clear:both;
+}
+
+#table1 {
+    text-align: center;
+    position:relative;
+    top:70px; left:70px;
+    font-size: 20px;
+
+}
+
+table td figure {
+    margin:12px;
+}
+
+#table2 img {
+    border-radius: 70%; 
+    border:5px double;
+}
+
+#table2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure a#kang:visited{
+    color:rgb(238, 230, 140);
+}
+
+figure a#kang:hover{
+    color:black;
+}
+
+figure a#na:visited{
+    color:rgb(185, 125, 190);
+}
+
+figure a#na:hover{
+    color:black;
+}
+
+figure a#park:visited{
+    color:pink;
+}
+
+figure a#park:hover{
+    color:black;
+}
+
+figure a#huh:visited{
+    color:rgb(227, 156, 50);
+}
+
+figure a#huh:hover{
+    color:black;
+}
+
+/* 새로 추가한 부분입니다. */
+
+/* 
+div#group > table >a> img:visited{
+    color:pink;
+}
+
+
+div#group > table >a > img:hover{
+    color:black;
+} */
+
+
+/* 요셉 CSS  */
+
+body{
+    margin: 0px;
+}
+
+div#button1{
+    padding-top: 3px;
+    background-color: white;
+    width: 50%;
+    height: 40px;
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+    
+}
+
+div#button1>img{
+    height: 30px;
+    width: 30px;
+    
+    
+}
+
+div#button2{
+    padding-top: 3px;
+    background-color: white;
+    width: 50%;
+    height: 40px;
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+div#button2>img{
+    height: 30px;
+    width: 30px;
+}
+
+
+section{
+    text-align: center;
+}
+
+div#pic1{
+    background-color: white;
+    width: 33.33%;
+    height: 320px;
+    float: left;
+    
+}
+div#pic2{
+    background-color: white;
+    width: 33.33%;
+    height: 320px;
+    float: left;
+    
+}
+div#pic3{
+    background-color: white;
+    width: 33.33%;
+    height: 320px;
+    float: left;
+   
+}
+
+div#study_reason{
+    width: 100%;
+    height: 350px;    
+    clear:both
+}
+
+div#study_reason div img{
+    width: 333px;
+    height: 320px;
+    float: left;
+}
+
+div#study_reason > div#comment{
+    height: 320px;    
+    width: 66.66%;
+    float: left;
+}
+
+div#study_reason >div#comment > h2{
+    position: relative;
+    left: 30px;
+}
+
+div#study_reason span{
+    background:linear-gradient(to top,#F69B94 70%, transparent 70%);
+}
+
+div#study_reason > div#comment >div{
+    position: relative;
+    left: 25px;
+    font-size: 20px;
+}
+
+
+div#interest_sector{
+    width: 100%;
+    height: 350px;
+    clear: both;
+}
+
+div#interest_sector div img{
+    width: 333px;
+    height: 320px;
+    float: left;
+}
+
+div#interest_sector > div#comment{
+    height: 320px;    
+    width: 66.66%;
+    float: left;
+}
+
+div#interest_sector >div#comment > h2{
+    position: relative;
+    left: 30px;
+}
+
+div#interest_sector span{
+    background:linear-gradient(to top,#F8C8C4 70%, transparent 70%);
+}
+
+div#interest_sector > div#comment >div{
+    position: relative;
+    left: 25px;
+    font-size: 20px;
+}
+
+
+
+div#struggle{
+    width: 100%;
+    height: 350px;
+    clear: both;
+}
+
+div#struggle div img{
+    width: 333px;
+    height: 320px;
+    float: left;
+}
+
+div#struggle > div#comment{
+    height: 320px;    
+    width: 66.66%;
+    float: left;
+}
+
+div#struggle >div#comment > h2{
+    position: relative;
+    left: 30px;
+}
+
+div#struggle span{
+    background:linear-gradient(to top,#96B0E5 70%, transparent 70%);
+}
+
+div#struggle > div#comment >div{
+    position: relative;
+    left: 25px;
+    font-size: 20px;
+}
+
+
+div#mini_project{
+    width: 100%;
+    height: 350px;
+    clear: both;
+}
+
+div#mini_project div img{
+    width: 333px;
+    height: 320px;
+    float: left;
+}
+
+div#mini_project > div#comment{
+    height: 320px;    
+    width: 66.66%;
+    float: left;
+}
+
+div#mini_project >div#comment > h2{
+    position: relative;
+    left: 30px;
+}
+
+div#mini_project span{
+    background:linear-gradient(to top,#BDD7F3 70%, transparent 70%);
+}
+
+div#mini_project > div#comment >div{
+    position: relative;
+    left: 25px;
+    font-size: 20px;
+}
+
+div#comment >div >span{
+    background:linear-gradient(to top,#ecf882 70%, transparent 70%);
+}
+
+
+hr{
+    margin: 5px;
+}
+
+/* 서영님 CSS */
+/* div#group {
+    border-bottom: 1px solid gray;
+} */
+
+div#group > table {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+div#group img {
+    width: 250px; 
+    height: 250px;
+    border-radius: 70%;
+}
+
+div#group section{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+div#group td{
+    vertical-align: top;
+}
+
+#nickname {
+    font-size: 50px;
+    font-weight: bold;
+    margin:0;
+}
+
+/* 새로 추가한 CSS 입니다. */
+
+section div img{
+    width: 320px;
+    height: 320px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+::-webkit-scrollbar-track {
+    background: var(--back-color-more-more);
+    border-radius: 2px;
+  }
+::-webkit-scrollbar-thumb {
+    background:  var(--fore-color-hint);
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: var(--fore-color);
+  }
+
+
+#images img{
+    
+    width:100%;
+    height:320px;
+}
+
+p#introduce{
+    position: relative;
+    text-align: left;
+    font-size: 20px;
+    left: 10px;
+}
+
+div#group>div{
+    position: relative;
+    left: 40px;
+    font-size: 20px;
+    color: #244a72;
+}
+
+
+body{
+    background-color: white;
+}

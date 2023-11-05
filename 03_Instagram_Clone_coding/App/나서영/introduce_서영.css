@@ -1,0 +1,291 @@
+body {
+    background-color: white;
+}
+
+
+div#group > table {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+div#group img {
+    width: 250px; 
+    height: 250px;
+    border-radius: 70%;
+}
+
+div#group td{
+    vertical-align: top;
+}
+
+div#group section{
+    margin-left: 70px;
+}
+
+
+#nickname {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#intro {
+    font-size:20px;
+}
+
+#introduce {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#info {
+    font-size:15px;
+    color:gray
+}
+
+#table2 td {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#table2 img {
+    width:150px;
+    height:150px;
+    border-radius: 70%; 
+    border:5px double;
+}
+
+
+div#button1{
+    padding-top: 3px;
+    background-color: white;
+    width: 50%;
+    height: 40px;
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+div#button1>img{
+    height: 30px;
+    width: 30px;
+}
+
+div#button2{
+    padding-top: 3px;
+    background-color: white;
+    width: 50%;
+    height: 40px;
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+div#button2>img{
+    height: 30px;
+    width: 30px;
+}
+
+#introduce table{
+    width: auto;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+    
+#introduce td {
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+
+#introduce article {
+    vertical-align: top;
+    padding-left: 50px;
+    margin: 0;
+}
+
+#introduce img {
+    width:250px;
+    height:350px;
+}
+
+#introduce h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#introduce p {
+    line-height: 25px;
+    font-size: 15px;
+}
+
+#cell {
+    font-size: 15px;
+    display: inline-block;
+    width: 300px;
+    background-color:rgba(229, 229, 229, 0.704);
+    padding: 15px;
+    padding-left: 30px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+#title {
+    width: 900px;
+    font-size: 20px;
+    font-weight: bold;
+    display:inline-block;
+    padding: 15px;
+    margin-left:30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color:rgba(229, 229, 229, 0.704);
+}
+
+#little_title {
+    font-size: 17px;
+    font-weight: bold;
+    margin-left:50px;
+    padding-bottom: 5px;
+}
+
+#contents {
+    margin: 0;
+    margin-bottom: 7px;
+    font-size: 15px;
+    margin-left:50px;
+    
+}
+
+#work td{
+    padding-left: 10px;
+}
+
+#work ul{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    width:480px;
+}
+
+#work li{
+    font-size: 15px;
+    padding-left: 50px;
+    margin-bottom: 17px;
+    width:480px;
+}
+
+#work img{
+    width:400px;
+    height: 400px;
+}
+
+#why table{
+    margin-bottom: 30px;
+}
+
+#why td{
+    padding-left: 40px;
+}
+
+#why img{
+    width:400px;
+    height: 300px;
+}
+
+#contents2 {
+    vertical-align: top;
+    margin: 0;
+    font-size: 15px;
+    line-height: 30px;
+    
+}
+
+
+#tool table{
+    margin-left: 50px;
+    width:900px;
+    /* border: 1px solid black; */
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+
+#tool td{
+    vertical-align: top;
+    margin: 0;
+    /* padding-top: 30px; */
+    padding-left: 10px;
+}
+
+#tool ul{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+    width:250px;
+    /* background-color:rgba(194, 160, 221, 0.459); */
+    background-color: rgba(173, 239, 173, 0.573);
+}
+
+#tool li{
+    font-size: 15px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    width:250px;
+}
+
+
+#effort table{
+    margin-left: 50px;
+    width:900px;
+    /* border: 1px solid black; */
+    text-align: left;
+}
+
+#effort td{
+    vertical-align: top;
+    margin: 0;
+    /* padding-top: 30px; */
+    padding-left: 10px;
+}
+
+#effort ul{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+    width:400px;
+    background-color:lightpink;
+}
+
+#effort li{
+    font-size: 15px;
+    padding-left: 50px;
+    margin-bottom: 10px;
+    width:300px;
+}
+
+
+/**스크롤바 삭제**/
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--back-color-more-more);
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background:  var(--fore-color-hint);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--fore-color);
+  }
+
