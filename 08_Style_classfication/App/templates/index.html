@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teenieping Picture</title>
+    <style>
+        @font-face {
+            font-family: 'YourFontName';
+            src: url('/static/Maplestory Bold.ttf') format('truetype');
+        }
+
+        body {
+            background-image: url('/static/devil.jpg');
+            background-size: cover;
+            font-family: 'YourFontName', sans-serif;
+            /* 스크롤 바가 없는 컨테이너 요소 */
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .result-container {
+            text-align: center;
+            background-color: rgba(215, 209, 203, 0.516);
+            border-radius: 10px;
+            width: 40%;
+            padding: 50px;
+            height: 500px;
+            display: none;
+        }
+
+        .form-container {
+            background-color:  rgba(215, 209, 203, 0.516);
+            border-radius: 10px;
+            width: 40%;
+            padding: 50px;
+            height: 500px;
+        }
+
+        .show-result-button {
+            display: block;
+            margin: 10px auto;
+            background: url('/static/search.png') no-repeat;
+            background-size: contain;
+            width: 30px;
+            height: 30px;
+            text-indent: -9999px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .close-button {
+            display: block;
+            margin: 10px auto;
+            background: url('/static/close.png') no-repeat;
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+            text-indent: -9999px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .uploaded-image-container {
+            background-color: rgba(86, 80, 62, 0.493);
+            border-radius: 10px;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            display: none;
+        }
+
+        .uploaded-image {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 10px;
+        }
+
+        .audio-controls {
+            text-align: center;
+            margin-top: 20px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .audio-controls button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .file-label {
+            cursor: pointer;
+        }
+
+        .result-content {
+            background-color: rgba(86, 80, 62, 0.493);
+            border-radius: 10px;
+            width: 80%;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        .result-text {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.608);
+            text-align: center;
+        }
+
+        .result-image-container {
+            background-color: white;
+            border-radius: 10px;
+            width: 90%; 
+            padding: 30px;
+            margin: 20px auto; 
+        }
+
+        .result-image {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<audio id="techie-audio" preload="auto">
+    <source src="/static/y2mate.com - 악마는 프라다를 입는다 ost KT Tunstall  Suddenly I See.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<div class="audio-controls">
+    <button onclick="playAudio()"><img src="/static/play.png" alt="재생"></button>
+    <button onclick="pauseAudio()"><img src="/static/pause.png" alt="일시 정지"></button>
+</div>
+<div class="container">
+    <div class="form-container">
+        <form method="post" enctype="multipart/form-data" id="image-form" action="/upload">
+            <label for="file-input" class="file-label">
+                <img src="/static/folder.png" alt="파일 찾기">
+            </label>
+            <input type="file" name="file" accept="image/*" id="file-input" class="file-input" onchange="showImage()">
+            <p style="font-family: 'YourFontName', sans-serif; color: black; font-size: 30px; text-align: center;">이미지를 선택해주세요.</p>
+        
+            <div class="uploaded-image-container" id="uploaded-image-container">
+                <img src="" alt="Uploaded Image" id="uploaded-image" class="uploaded-image">
+                <input type="submit" class="show-result-button" onclick="">확인</button>
+            </div>
+        </form>
+    </div>
+    <div class="result-container" id="result-container">
+        <button class="close-button" onclick="hideResult()">닫기</button>
+        <div class="result-content">
+            <div class="result-text">
+                <img src="/static/upload/uploaded_image.png" alt="Result Image" id="result-image" class="result-image">
+
+                <h3>당신의 패션은<br>{{result_message}}년대 <br>{{result_message1}}스타일이고, <br>나이는 {{result_message2}}, <br>직업은 {{result_message3}}, <br>수입은 {{result_message4}}으로 예상됩니다.</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var audio = document.getElementById("techie-audio");
+
+    function showResult() {
+        var resultContainer = document.getElementById("result-container");
+        resultContainer.style.display = "block";
+    }
+
+    function hideResult() {
+        var resultContainer = document.getElementById("result-container");
+        resultContainer.style.display = "none";
+    }
+
+    function showImage() {
+        var input = document.getElementById("file-input");
+        var uploadedImage = document.getElementById("uploaded-image");
+        var uploadedImageContainer = document.getElementById("uploaded-image-container");
+        var resultContainer = document.getElementById("result-container");
+
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            uploadedImage.src = e.target.result;
+            uploadedImageContainer.style.display = "flex";
+            resultContainer.style.display = "none";
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+
+    function playAudio() {
+        audio.play();
+    }
+
+    function pauseAudio() {
+        audio.pause();
+    }
+    {{internal_script}}
+</script>
+</body>
+</html>
