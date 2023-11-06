@@ -1,0 +1,17 @@
+{% extends "/main/temp.html" %}
+{% block title %}School Model Predict{% endblock %}
+{% block content %} 
+
+<div class="row" style="display: flex; justify-content: center; align-items: center; height: 50vh;">
+    <div class="alert alert-dismissible alert-primary" style="width: 50%;  height: 50%;">
+        <h4 class="alert-heading" style="display: flex; justify-content: center; align-items: center; height: 8vh;">서비스 개발 중</h4>
+        <p style="display: flex; justify-content: center; align-items: center;"><strong>현재 서비스 개발 중에 있습니다.</strong></p>
+        <p class="bs-component" style="margin-bottom: 4%;">
+            <form method="post" action="{{url_for('model.school_index')}}" style="display: flex; justify-content: center; align-items: center;">
+                <button class="btn btn-lg btn-primary" type="submit" name='home_button'>홈으로 돌아가기</button>
+            </form>
+        </p>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "/main/temp.html" %}
+{% block title %}How to{% endblock %}
+{% block content %} 
+<div class="row d-flex align-items-center" style="margin-top: 5%; padding-left: 3%;">
+    <div class="col-lg-7 d-flex align-items-center">
+        <img src="{{url_for('main.static', filename='/img/code1.png')}}" alt="모델 구현 코드" style="width: 100%; height: auto; margin-bottom: 5%; box-shadow: 5px 5px 10px #888888; border-radius: 10px;">
+    </div>
+    <div class="col-lg-5 mx-auto d-flex justify-content-center align-items-center">
+        <div class="bs-component">
+            <h1 style="margin-bottom: 5%;"><strong>> Model Design</strong></h1>
+            <h3 style="margin-bottom: 5%; margin-top: 10%;"><strong>사용 데이터</strong></h3>
+            <p>1. TUNiB의 DKTC 데이터<br>(Dataset of Korean Threatening Conversations)</p>
+            <p class="text-secondary"><small>데이터 출처: https://github.com/tunib-ai/DKTC</small></p>
+            <p>2. AI-Hub의 주제별 텍스트 일상 대화 데이터</p>
+            <p class="text-secondary"><small>데이터 출처: https://www.aihub.or.kr/</small></p>
+            <h3 style="margin-bottom: 5%; margin-top: 10%;"><strong>LSTM을 활용한 딥러닝 모델</strong></h3>
+            <p>직장 내 일상 대화 / 괴롭힘 대화로 이진 분류</p>
+            <p>0(괴롭힘 대화)~1(일상 대화) 사이의 확률 반환</p>
+            <p>단, 모델의 민감도를 고려하여 확률 0.1 이하만을 괴롭힘으로 판별</p>
+        </div>
+    </div>
+</div>
+<div class="row d-flex align-items-center" style="margin-top: 5%; padding-left: 3%;">
+    <div class="col-lg-7 d-flex align-items-center">
+        <img src="{{url_for('main.static', filename='/img/data.png')}}" alt="데이터 활용" style="width: 100%; height: auto; margin-bottom: 5%; box-shadow: 5px 5px 10px #888888; border-radius: 10px;">
+    </div>
+    <div class="col-lg-5 mx-auto d-flex justify-content-center align-items-center">
+        <div class="bs-component">
+            <h1 style="margin-bottom: 5%;"><strong>> Data reordering</strong></h1>
+            <h3 style="margin-bottom: 5%; margin-top: 10%;"><strong>데이터를 발화자 기준으로 재정렬</strong></h3>
+            <p>기존 데이터셋은 모든 발화가 개행문자(\n)로 연결되어 있음</p>
+            <p class="text-secondary"><small>ex. 발화1 \n 발화2 \n 발화3 ...</small></p>
+            <p>이를 질문-대답 형식으로 바꾸어 활용하였음</p>
+            <p class="text-secondary"><small>ex. 발화1-발화2, 발화2-발화3, 발화3-발화4 ...</small></p>
+        </div>
+    </div>
+</div>
+<div class="row d-flex align-items-center" style="margin-top: 5%; padding-left: 3%;">
+    <div class="col-lg-7 d-flex align-items-center">
+        <img src="{{url_for('main.static', filename='/img/code2.png')}}" alt="데이터 정제" style="width: 100%; height: auto; margin-bottom: 5%; box-shadow: 5px 5px 10px #888888; border-radius: 10px;">
+    </div>
+    <div class="col-lg-5 mx-auto d-flex justify-content-center align-items-center">
+        <div class="bs-component">
+            <h1 style="margin-bottom: 5%;"><strong>> Data Parsing /<br> Preprocessing</strong></h1>
+            <h3 style="margin-bottom: 5%; margin-top: 10%;"><strong>데이터 정제</strong></h3>
+            <p>Konlpy 라이브러리의 Kkma를 이용한 데이터 파싱,<br>특정 품사를 지정하여 활용하였음</p>
+            <p class="text-secondary"><small>일반명사, 고유명사, 대명사, 동사, 형용사,<br> 긍/부정 지정사, 감탄사, 일반 부사</small></p>
+        </div>
+    </div>
+</div>
+<div class="row d-flex align-items-center" style="margin-top: 5%; padding-left: 3%;">
+    <div class="col-lg-7 d-flex align-items-center">
+        <img src="{{url_for('main.static', filename='/img/code3.png')}}" alt="데이터 정제" style="width: 100%; height: auto; margin-bottom: 5%; box-shadow: 5px 5px 10px #888888; border-radius: 10px;">
+    </div>
+    <div class="col-lg-5 mx-auto d-flex justify-content-center align-items-center">
+        <div class="bs-component">
+            <h1 style="margin-bottom: 5%;"><strong>> Data Vectorization </strong></h1>
+            <h3 style="margin-bottom: 5%; margin-top: 10%;"><strong>자연어 데이터를 숫자로 변환, 벡터화</strong></h3>
+            <p>학습/테스트용으로 데이터를 분리하였음</p>
+            <p>2회 이상 등장한 단어를 기준으로 데이터 정제</p>
+            <p>자연어를 숫자로 변환 후, <br><strong class="text-secondary">문장 길이 최빈값</strong>을 기준으로 패딩 처리</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "/main/temp.html" %}
+{% block title %}Main Page{% endblock %}
+{% block content %} 
+<div class="row d-flex align-items-center" style="margin-top: 5%; padding-left: 3%;">
+    <div class="col-lg-7 d-flex align-items-center">
+        <img src="{{url_for('main.static', filename='/img/example.png')}}" alt="서비스 안내" style="width: 100%; height: auto; margin-bottom: 5%; box-shadow: 5px 5px 10px #888888; border-radius: 10px;">
+    </div>
+    <div class="col-lg-5 mx-auto d-flex justify-content-center align-items-center">
+        <div class="bs-component">
+            <h1 style="margin-bottom: 5%;"><strong>> Sentence Checker</strong></h1>
+            <h3 style="margin-bottom: 5%; margin-top: 10%;"><strong>대화 내 괴롭힘 정도 측정 서비스</strong></h3>
+            <p>타인과 주고 받은 대화를 대화 창에 입력해 보세요.</p>
+            <p>직장 내 괴롭힘, 학교폭력 등 작은 사회에서 일어나는 괴롭힘을 <br>대화 속에서 탐지하여 알려줍니다.</p>
+            <p class="text-secondary"><small>현재 개방 서비스: 직장 내 괴롭힘 측정 서비스<br>차후 개방 예정 서비스: 학교 내 언어 폭력 측정 서비스</small></p>
+            <h3 style="margin-bottom: 5%; margin-top: 10%;"><strong>모바일에 바로 적용 가능</strong></h3>
+            <p>반응형 웹 페이지로 구현해, 추가적인 개발 없이 <br>모바일에서도 접근할 수 있습니다.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
